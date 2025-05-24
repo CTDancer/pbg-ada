@@ -1,1 +1,2 @@
 /home/tc415/pbg-ada/PPI_datasets/** filter=lfs diff=lfs merge=lfs -text
+/home/tc415/pbg-ada/moPPIt/** filter=lfs diff=lfs merge=lfs -text
