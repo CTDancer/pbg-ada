@@ -1,0 +1,26 @@
+export CUDA_VISIBLE_DEVICES=1
+export WANDB_API_KEY=b7b6ecceb6854bd12f58809f18264f979509d13b
+
+python -u generation_correct.py \
+-lr 1e-4 \
+-d_node_muppit 256 \
+-d_edge_muppit 128 \
+-d_cross_edge_muppit 128 \
+-d_position_muppit 8 \
+-n_heads_muppit 2 \
+-n_intra_layers_muppit 2 \
+-n_mim_layers_muppit 2 \
+-n_cross_layers_muppit 2 \
+-node_dim_decoder 256 \
+-edge_dim_decoder 128 \
+-hidden_dim_decoder 256 \
+-n_layers_decoder 4 \
+-dropout_decoder 0.2 \
+-sm '/home/tc415/muPPIt/checkpoints/train_correct_0/model-epoch=16-val_acc=0.67.ckpt' \
+-num_updates 300 \
+-step_size 2 \
+-top_k 3 \
+-num_binders 50 \
+-binder_length 20 \
+-wt 'MASETFEFQAEITQLMSLIINTVYSNKEIFLRELISNASDALDKIRYKSLSDPKQLETCWWLPIWITPCPCIKVLEIRDSGIGMTKAELINNLGTIAKSGTKAFMEALSAGADVSMIGQFGVGFYSLFLVADRVQVISKSNDDEQYIWESNAGGSFTVTLWCHWCWIGRGTILRLFLKDDQLEYLECKRIIEVGWRHSEFVADWGIGGNFFCRC' \
+-mut 'MASETFEFQAEITQLMSLIINTVYSNKEIFLRELISNASDALDKIRYKSLSDPKQLETEPDLFIRITPKPEQKVLEIRDSGIGMTKAELINNLGTIAKSGTKAFMEALSAGADVSMIGQFGVGFYSLFLVADRVQVISKSNDDEQYIWESNAGGSFTVTLDEVNERIGRGTILRLFLKDDQLEYLEEKRIKEVIKRHSEFVAYPIQLVVTKEVE'

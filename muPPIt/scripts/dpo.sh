@@ -1,0 +1,26 @@
+export CUDA_VISIBLE_DEVICES=7
+
+python -u dpo.py \
+-d_node_muppit 256 \
+-d_edge_muppit 128 \
+-d_cross_edge_muppit 128 \
+-d_position_muppit 8 \
+-n_heads_muppit 2 \
+-n_intra_layers_muppit 2 \
+-n_mim_layers_muppit 2 \
+-n_cross_layers_muppit 2 \
+-sm_muppit '/home/tc415/muPPIt/checkpoints/train_affinity_8/model-epoch=23-val_acc=0.65.ckpt' \
+-pn_num_layers 8 \
+-pn_num_heads 8 \
+-pn_forward_expansion 4 \
+-pn_dropout 0.2 \
+-pn_lr 1e-2 \
+-max_epochs 200 \
+-top_k 3 \
+-num_binders 500 \
+-binder_length 12 \
+-num_random 0 \
+-wt 'LAAVSVDCSEYPKPACTLEYRPLCGSDNKTYGNKCNFCNAVVESNGTLTLSHFGKC' \
+-mut 'LAAVSVDCSEYPRPACTLEYRPLCGSDNKTYGNKCNFCNAVVESNGTLTLSHFGKC'
+# -mut 'MCDLPQTHSLGSRRTLMLLAQMRRISLFSCLKDRHDFGFPQEEFGNQFQKAETIPVLYNMISQIFNLFSTKDSSAAWDETLLDKFYTELYQQLNDLEACVIQGVGVTETPLMKEDSILAVRKYFQRITLYAKEKKYSPCAWEVVRAEIMRSFSLSTNLQESLRSKE' \
+# -wt 'MCDLPQTHSLGSRRTLMLLAQMRRISLFSCLKDRHDFGFPQEEFGNQFQKAETIPVLYNMISQIFNLFSTKDSSAAWDETLLDKFYTELYQQLNDLEACVIQGVGVTETPLMKEDSILAVRKYFQRITLYLKEKKYSPCAWEVVRAEIMRSFSLSTNLQESLRSKE'
