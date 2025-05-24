@@ -1,0 +1,5 @@
+method: cbg
+condition: 0
+classifier_checkpoint_path: '/home/tc415/muppit/model_path/PeptideBindEvaluator.ckpt'
+gamma: 2.0
+use_approx: False  # use first-order approximation

@@ -1,0 +1,8 @@
+train: protein_400k
+valid: protein_400k
+tokenizer_name_or_path: facebook/esm2_t33_650M_UR50D
+cache_dir: /home/tc415/discrete-diffusion-guidance/dataset
+wrap: False
+streaming: False
+override_cache: False
+add_special_tokens: True

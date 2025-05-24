@@ -1,0 +1,6 @@
+export CUDA_VISIBLE_DEVICES=0
+export NCCL_P2P_LEVEL=NVL
+export HYDRA_FULL_ERROR=1
+export CUDA_LAUNCH_BLOCKING=1
+
+python -u main.py
