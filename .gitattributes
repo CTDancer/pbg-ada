@@ -25,3 +25,4 @@
 /home/tc415/pbg-ada/moPPIt/dataset/human_kinase_2.csv filter=lfs diff=lfs merge=lfs -text
 /home/tc415/pbg-ada/moPPIt/dataset/test.csv filter=lfs diff=lfs merge=lfs -text
 /home/tc415/pbg-ada/moPPIt/moppit/saltnpeppr filter=lfs diff=lfs merge=lfs -text
+/home/tc415/pbg-ada/moPPIt/moppit/saltnpeppr/production_version_epoch=3.ckpt filter=lfs diff=lfs merge=lfs -text
