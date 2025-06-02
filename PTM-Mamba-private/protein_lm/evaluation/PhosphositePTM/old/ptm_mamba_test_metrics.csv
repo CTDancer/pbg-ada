@@ -1,0 +1,8 @@
+,Length,accuracy,precision,recall,f1,mcc,auroc,auprc
+0,256.0,tensor(0.7835),tensor(0.0890),tensor(0.9600),tensor(0.1630),tensor(0.2550),tensor(0.8698),0.08681560712869887
+0,301.0,tensor(0.8025),tensor(0.0529),tensor(0.9343),tensor(0.1001),tensor(0.1954),tensor(0.8676),0.05192081077363638
+0,331.0,tensor(0.7894),tensor(0.0635),tensor(0.9564),tensor(0.1191),tensor(0.2158),tensor(0.8716),0.06136437820394299
+0,369.0,tensor(0.7829),tensor(0.0706),tensor(0.9604),tensor(0.1316),tensor(0.2272),tensor(0.8701),0.0689766343829552
+0,415.0,tensor(0.7859),tensor(0.0714),tensor(0.9561),tensor(0.1329),tensor(0.2282),tensor(0.8695),0.06930629193559883
+0,463.0,tensor(0.7910),tensor(0.0696),tensor(0.9513),tensor(0.1297),tensor(0.2252),tensor(0.8698),0.06754531610474088
+0,509.0,tensor(0.7910),tensor(0.0609),tensor(0.9551),tensor(0.1146),tensor(0.2115),tensor(0.8719),0.06013836664766978
